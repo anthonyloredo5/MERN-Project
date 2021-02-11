@@ -11,7 +11,7 @@ const Posts = () => {
 
     return(
         //react fragment
-        !posts.length ? <CircularProgress /> :(
+        !posts.length ? <CircularProgress /> : (
             <Grid className={classes.container} container alignItems="stretch" spacing={3}>
                 {
                     posts.map((post)=>(
