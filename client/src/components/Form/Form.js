@@ -5,6 +5,8 @@ import FileBase from 'react-file-base64';
 import { useDispatch } from 'react-redux';
 import { createPost } from '../../api/index.js';
 
+//Get the current id
+
 const Form = () => {
     const [postData, setPostdata] = useState({
         creator: '', title: '', message: '', tags: '', selectedFile: ''
