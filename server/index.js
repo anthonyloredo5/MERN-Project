@@ -19,6 +19,10 @@ app.use(cors());
 //adds "posts" to all post routes coming into this file
 app.use('/posts', postRoutes);
 
+app.get('/', (req, res) => {
+    res.send("Hello to MERN")
+});
+
 const PORT = process.env.PORT || 5000;
 
 //db connection
