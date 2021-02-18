@@ -3,11 +3,18 @@ import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
 import dotenv from 'dotenv';
+import path from 'path'
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
 
 import postRoutes from './routes/posts.js';
 
 const app = express();
 dotenv.config();
+
+app.use(express.static(__dirname + '/client/build'));
 
 
 //middle for mongoose
@@ -19,9 +26,12 @@ app.use(cors());
 //adds "posts" to all post routes coming into this file
 app.use('/posts', postRoutes);
 
-app.get('/', (req, res) => {
-    res.send("Hello to MERN");
-});
+// app.get('/', (req, res) => {
+//     res.send("MERN");
+// });
+app.get('*', (req, res) =>
+    res.sendFile(path.resolve(__dirname, '/client', 'build', 'index.html'))
+  );
 
 const PORT = process.env.PORT || 5000;
 

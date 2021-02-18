@@ -15,15 +15,6 @@ const Form = ({ currentId, setCurrentId }) => {
     const classes = useStyles();
     const dispatch = useDispatch();
 
-
-    //think theres something wrong here
-    //Given
-
-    // useEffect(() => {
-    //     if(post) setPostData(post);
-    // }, [post]);
-
-    //test
     useEffect(() => {
         if(post) setPostData(post);
     }, [post]);
