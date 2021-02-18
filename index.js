@@ -2,7 +2,7 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 import path from 'path'
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
@@ -12,7 +12,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 import postRoutes from './routes/posts.js';
 
 const app = express();
-dotenv.config();
+//dotenv.config();
 
 app.use(express.static(__dirname + '/client/build'));
 
