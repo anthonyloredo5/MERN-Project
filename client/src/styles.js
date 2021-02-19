@@ -8,9 +8,10 @@ export default makeStyles((theme) => ({
         flexDirection: 'row',
         justifyContent: 'center',
         alignItems: 'center',
+        color: '#5b2d89'
       },
       heading: {
-        color: '#5b2d89',
+        color: '#000000',
       },
       image: {
         marginLeft: '15px',
@@ -20,5 +21,4 @@ export default makeStyles((theme) => ({
           flexDirection: 'column-reverse'
         }
       }
-      
 }));
