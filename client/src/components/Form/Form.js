@@ -19,9 +19,9 @@ const Form = ({ currentId, setCurrentId }) => {
         if(post) setPostData(post);
     }, [post]);
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
         //by removing preventDefault it solved the "use middle problem"
-       // e.preventDefault();
+       //e.preventDefault();
 
         if(currentId) {
             dispatch(updatePost(currentId, postData));
