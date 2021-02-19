@@ -7,7 +7,6 @@ import path from 'path'
 import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-//const CONNECTION_URL = mongodb+srv://anthonyloredo5:anthonyloredo5123@cluster0.dtlwh.mongodb.net/<dbname>?retryWrites=true&w=majority
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
