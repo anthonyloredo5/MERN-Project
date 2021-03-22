@@ -18,6 +18,10 @@ https://stack-mern17.herokuapp.com
 
 This is a full stack MERN Application that utilizes all the implementations of CRUD. Created with React and Material UI that allows users to post games with images and descriptions that are all kept in the NoSQL database.
 
+## Images
+
+![screenshot](https://github.com/anthonyloredo5/Post-It-Games/blob/main/client/src/assets/Screen%20Shot%202021-03-22%20at%203.19.56%20PM.png?raw=true)
+
 ## Technologies
 - HTML
 - CSS
